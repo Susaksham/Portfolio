@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 // import classes from './Navigation.module.css'
-import { Outlet } from 'react-router-dom'
+import { Outlet } from "react-router-dom";
 // pt-[2rem] pl-[6.25rem] pr-[6.25rem] pb-[2rem]
 function Navigation() {
   return (
@@ -22,11 +22,11 @@ function Navigation() {
                   >
                     Home
                   </span>
-                )
+                );
               }}
             </NavLink>
           </li>
-          <li>
+          {/*<li>
             <NavLink className="no-underline" to="/about">
               {({ isActive }) => {
                 return (
@@ -42,7 +42,7 @@ function Navigation() {
                 )
               }}
             </NavLink>
-          </li>
+            </li>*/}
           <li>
             <NavLink className="no-underline" to="/skills">
               {({ isActive }) => {
@@ -56,7 +56,7 @@ function Navigation() {
                   >
                     Skills
                   </span>
-                )
+                );
               }}
             </NavLink>
           </li>
@@ -73,7 +73,7 @@ function Navigation() {
                   >
                     Projects
                   </span>
-                )
+                );
               }}
             </NavLink>
           </li>
@@ -90,14 +90,14 @@ function Navigation() {
                   >
                     Contact
                   </span>
-                )
+                );
               }}
             </NavLink>
           </li>
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navigation
+export default Navigation;

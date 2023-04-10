@@ -1,11 +1,33 @@
-import React from 'react'
-import ExpressIcon from '../../assets/icons/express_icon.js'
-import JavascriptIcon from '../../assets/icons/JavascriptIcon.js'
-import ReactIcon from '../../assets/icons/ReactIcon.js'
+import React from "react";
+import ExpressIcon from "../../assets/icons/express_icon.jsx";
+import JavascriptIcon from "../../assets/icons/JavascriptIcon.jsx";
+import ReactIcon from "../../assets/icons/ReactIcon.jsx";
+import MongoDb from "../../assets/icons/mongoDb.png";
+import Tailwindicon from "../../assets/icons/tailwindicon.jsx";
+import MySqlIcon from "../../assets/icons/MySqlIcon.jsx";
+import FirebaseIcon from "../../assets/icons/firebaseIcon.jsx";
+import GitIcon from "../../assets/icons/GitIcon.jsx";
 function Skills() {
   return (
-    <div>
-      <div className="flex items-center gap-4 py-4">
+    <div className=" w-full flex flex-col items-center justify-center gap-8 mb-10">
+      <div className="text-center flex flex-col justify-center items-center gap-5 pt-10">
+        <div>
+          <h1 className=" text-5xl font-bold flex ">
+            <div className="  text-blue-400">S</div>
+            <div className="  text-blue-400">k</div>
+            <div className="  text-blue-300">i</div>
+            <div className="  text-blue-300">l</div>
+            <div className="  text-blue-200">l</div>
+            <div className=" text-blue-200">s</div>
+          </h1>
+        </div>
+        <span className=" text-slate-50 text-2xl">
+          Some of the skills I’ve been practicing <br /> and mastering through
+          time.
+        </span>
+      </div>
+
+      <div className="flex items-center gap-10 py-4 mobile:w-100% mobile:px-8 mobile:flex-wrap w-2/3 justify-center">
         <div className="p-5 bg-zinc-500 rounded-lg">
           <JavascriptIcon></JavascriptIcon>
         </div>
@@ -27,9 +49,24 @@ function Skills() {
         <div className="p-5 bg-zinc-500 rounded-lg">
           <ExpressIcon></ExpressIcon>
         </div>
+        <div className='className=" p-5 bg-zinc-500 rounded-lg'>
+          <img className="w-[3.8rem] h-[3.8rem]]" src={MongoDb}></img>
+        </div>
+        <div className='className=" p-5 bg-zinc-500 rounded-lg'>
+          <Tailwindicon></Tailwindicon>
+        </div>
+        <div className='className=" p-5 bg-zinc-500 rounded-lg'>
+          <MySqlIcon></MySqlIcon>
+        </div>
+        <div className='className=" p-5 bg-zinc-500 rounded-lg'>
+          <FirebaseIcon></FirebaseIcon>
+        </div>
+        <div className='className=" p-5 bg-zinc-500 rounded-lg'>
+          <GitIcon></GitIcon>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

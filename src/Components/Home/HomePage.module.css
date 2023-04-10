@@ -6,3 +6,8 @@
 .home h1 {
   background-color: green;
 }
+#text {
+  background: #3a404c;
+  color: white;
+  width: max-content;
+}
