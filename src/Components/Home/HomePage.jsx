@@ -20,11 +20,11 @@ function HomePage() {
   };
   return (
     //
-    <div className="py-4 min-w-fit h-full flex justify-center items-center ">
-      <div className=" min-h-fit  py-4 px-4 flex gap-36 ">
+    <div className="laptop:py-4 min-w-fit h-full flex justify-center items-center mobile:mb-10 ">
+      <div className=" min-h-fit  py-4 px-4 flex laptop:gap-36  laptop:flex-row mobile:flex-col-reverse ">
         <div className="flex-1 flex flex-col gap-5">
-          <div>
-            <h1 className=" text-5xl font-bold flex ">
+          <div className="mobile:flex mobile:items-center mobile:justify-center laptop:block">
+            <h1 className=" laptop:text-5xl font-bold flex mobile:text-3xl  ">
               <div className="  text-slate-50">H</div>
               <div className="  text-slate-100">e</div>
               <div className="  text-slate-100">y</div>
@@ -46,9 +46,14 @@ function HomePage() {
             </h1>
           </div>
           <div className="mt-3">
-            <h2 className=" text-slate-400 text-3xl">I'm a </h2>
-            <p>
-              <div id={classes.text} className="bg-slate-300 text-xl">
+            <h2 className=" text-slate-400 laptop:text-3xl mobile:text-xl mobile:text-center laptop:text-left mobile:hidden laptop:block">
+              I'm a{" "}
+            </h2>
+            <div className=" laptop:inline  mobile:flex mobile:items-center mobile:justify-center">
+              <div
+                id={classes.text}
+                className="bg-slate-300 laptop:text-xl mobile:text-lg"
+              >
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
@@ -66,10 +71,10 @@ function HomePage() {
                   }}
                 />
               </div>
-            </p>
+            </div>
           </div>
           <div>
-            <p className="text-slate-400 text-lg">
+            <p className="text-slate-400 text-lg mobile:text-center laptop:text-left">
               I code{" "}
               <span className="bg-[#2d3c4c] text-[#4291bb]"> beautifully </span>{" "}
               simple things and I <br /> love what I do but It's being
@@ -79,19 +84,19 @@ function HomePage() {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col  justify-between  bg-[#171923] py-8 px-8 h-[25rem] rounded-lg">
+          <div className="flex flex-col  justify-between laptop:bg-[#171923] py-8 px-8 laptop:h-[25rem] rounded-lg">
             <div className="flex flex-col items-center ">
               <div className="w-[8rem] rounded-full overflow-hidden">
                 <img src={ProfileImage} alt="not visible"></img>
               </div>
-              <span className="text-lg text-slate-100 mt-1">
+              <span className="text-lg text-slate-100 mt-1 mobile:hidden laptop:inline-block">
                 Susaksham Jain
               </span>
-              <span className="text-lg text-slate-400">
+              <span className="text-lg text-slate-400 laptop:inline-block mobile:hidden">
                 Software Engineer Student
               </span>
             </div>
-            <div>
+            <div className="laptop:inline-block mobile:hidden">
               <button
                 type="file"
                 onClick={onButtonClick}

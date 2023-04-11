@@ -45,7 +45,7 @@ const ProjectItems = () => {
     <>
       <div className="flex flex-col items-center gap-8 mt-8">
         <div className="flex flex-col items-center gap-6">
-          <h1 className=" text-5xl font-bold flex ">
+          <h1 className=" mobile:text-3xl laptop:text-5xl font-bold flex ">
             <div className="  text-blue-400">P</div>
             <div className="  text-blue-400">r</div>
             <div className="  text-blue-300">o</div>
@@ -55,12 +55,12 @@ const ProjectItems = () => {
             <div className="  text-blue-100"> t</div>
             <div className=" text-blue-100">s</div>
           </h1>
-          <p className=" text-slate-50 text-2xl">
+          <p className=" text-slate-50 laptop:text-2xl mobile:text-lg">
             {" "}
             These are some of my projects.
           </p>
         </div>
-        <div className="flex gap-10 overflow-hidden h-fit  ">
+        <div className=" laptop:gap-10 overflow-hidden h-fit mobile:flex-col flex  laptop:flex-row">
           {projectName.map((element) => {
             return (
               <ProjectItem

@@ -10,4 +10,5 @@
   background: #3a404c;
   color: white;
   width: max-content;
+  @apply mobile:text-center;
 }

@@ -5,10 +5,12 @@ import { Outlet } from "react-router-dom";
 // pt-[2rem] pl-[6.25rem] pr-[6.25rem] pb-[2rem]
 function Navigation() {
   return (
-    <div className="flex pt-6 pl-24 pr-24 pb-6    justify-between w-full  shadow-lg shadow-slate-900 ">
-      <h1 className="text-slate-50 text-3xl">Susaksham Jain</h1>
-      <div className="links">
-        <ul className="flex list-none gap-4">
+    <div className="flex mobile:pt-6 mobile:pl-4 mobile:pr-4 mobile:pb-3 laptop:pt-6  laptop:pl-24 laptop:pr-24 laptop:pb-6    justify-between w-full  shadow-lg shadow-slate-900 ">
+      <h1 className="text-slate-50 mobile:text-xl laptop:text-3xl flex items-center">
+        Susaksham Jain
+      </h1>
+      <div className="flex">
+        <ul className=" list-none laptop:gap-4 mobile:hidden   tablet:flex ">
           <li>
             <NavLink className="no-underline" to="/home">
               {({ isActive }) => {
@@ -95,6 +97,17 @@ function Navigation() {
             </NavLink>
           </li>
         </ul>
+        <div className="bg-[#272d3c9d] p-3 laptop:hidden rounded-lg ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className=" mobile:w-[1.5rem] "
+            fill="white"
+          >
+            <title>menu</title>
+            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+          </svg>
+        </div>
       </div>
     </div>
   );

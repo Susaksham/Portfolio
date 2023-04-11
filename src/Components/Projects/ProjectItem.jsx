@@ -13,7 +13,7 @@ const ProjectItem = (props) => {
   };
   return (
     <div className="p-5 relative h-full ">
-      <div className=" bg-black desktop:w-96 rounded-lg desktop:h-fit overflow-hidden">
+      <div className=" bg-black laptop:w-96 rounded-lg laptop:h-fit overflow-hidden mobile:w-60 mobile:h-fit">
         <div id={classes.imageSectionId} className={classes.imageSection}>
           <div id={classes.shadow}></div>
           <div
@@ -41,10 +41,10 @@ const ProjectItem = (props) => {
             src={props.url}
           ></img>
         </div>
-        <div className="p-7 flex flex-col gap-3">
+        <div className="laptop:p-7 flex flex-col gap-3 mobile:p-3">
           <button
             onClick={showHandler}
-            className=" text-slate-50 border-2 p-2 w-fit border-white rounded-lg"
+            className=" text-slate-50 border-2 laptop:p-2 mobile:p-1 w-fit  border-white rounded-lg"
           >
             {showTech ? "Hide ⬆️" : "Show TechStack ⬇️"}
           </button>
