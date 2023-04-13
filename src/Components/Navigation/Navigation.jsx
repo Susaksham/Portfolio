@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 // import classes from './Navigation.module.css'
 import { Outlet } from "react-router-dom";
 // pt-[2rem] pl-[6.25rem] pr-[6.25rem] pb-[2rem]
-function Navigation() {
+function Navigation(props) {
   return (
     <div className="flex mobile:pt-6 mobile:pl-4 mobile:pr-4 mobile:pb-3 laptop:pt-6  laptop:pl-24 laptop:pr-24 laptop:pb-6    justify-between w-full  shadow-lg shadow-slate-900 ">
       <h1 className="text-slate-50 mobile:text-xl laptop:text-3xl flex items-center">
@@ -97,7 +97,10 @@ function Navigation() {
             </NavLink>
           </li>
         </ul>
-        <div className="bg-[#272d3c9d] p-3 laptop:hidden rounded-lg ">
+        <div
+          onClick={props.showHandler}
+          className="bg-[#272d3c9d] p-3 laptop:hidden rounded-lg "
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
