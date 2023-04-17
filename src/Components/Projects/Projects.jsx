@@ -15,6 +15,7 @@ function Projects() {
         setRepo(data);
         setIsLoading(false);
         console.log(data);
+        console.log(data);
       } catch (err) {
         setIsLoading(false);
 
