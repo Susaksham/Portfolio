@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import ProfileImage from "../../assets/IMG_20220621_155027_315.png";
+import ProfileImage from "/Profile.png";
 
 import classes from "./HomePage.module.css";
 {
